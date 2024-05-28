@@ -1,0 +1,110 @@
+/*
+import font from web
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+:root { 
+    --theme-bg : #e0e0e0;
+}
+body{
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color : var(--theme-bg);
+}
+
+.otp-section{
+  width:100%;
+  height:100vh;
+  /* by direction row wise or in one line*/
+  display:flex;
+  /* how to centerd div */
+  justify-content: center;
+  align-items: center;
+  
+
+}
+
+.otp-container{
+    width:800px;
+    height:400px;
+    /* use it from neuphorism 
+      box-shadow is used here
+    */
+    border-radius: 35px;
+    background:  var(--theme-bg);
+    box-shadow:  5px 5px 6px #929292,
+             -5px -5px 6px #ffffff;
+    /* how to centerd div */
+    /*margin:auto;*/
+
+    /* by direction row wise or in one line*/
+    display:flex;
+    /* column wise direction */
+    flex-direction: column;
+    padding:60px;
+    /* middle all the elements in the container */
+    justify-content: center;
+    align-items: center;
+    /* position the switch with relation*/
+    position: relative;
+
+}
+
+.otp-container h1{
+    font-style: normal;
+    font-size: 50px;
+    text-transform: capitalize;
+}
+
+.otp-container .otp-input-list{
+    padding: 20px 0;
+}
+
+.otp-container .otp-input-list input{
+    width:60px;
+    height:60px;
+    border:transparent;
+    font-size:50ox;
+    padding:5px;
+    text-align: center;
+    border-radius: 50px;
+    background:  var(--theme-bg);
+    /* used it by neurophism */
+    box-shadow: inset 5px 5px 6px #898989,
+            inset -5px -5px 6px #ffffff;
+}
+.otp-container .otp-input-list input:focus{
+    outline:none;
+}
+
+.otp-container .generate-otp-code, .otp-container .otp-validate-message{
+    font-size : 40px;
+    font-weight: bolder;
+}
+
+#switch-button{
+    position: absolute;
+    top:20px;
+    right:40px;
+}
+
+#switch-button:hover{
+    cursor:pointer;
+}
+
+#btn{
+    background-color: red;
+    border:none;
+    padding:10px;
+    border-radius:10px;
+}
+
+
+
+

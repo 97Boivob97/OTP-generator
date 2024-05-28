@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Generator</title>
+    <link rel="stylesheet" href="style.css"></link>
+    <link rel="stylesheet" href="switch.css">
+</head>
+<body>
+    <div class="otp-section">
+        <div class="otp-container">
+            <h1>Our otp code</h1>
+            <div class="otp-input-list" id="otp-input-list">
+                <input type="text" class="otp-input" maxlength="1">
+                <input type="text" class="otp-input" maxlength="1">
+                <input type="text" class="otp-input" maxlength="1">
+                <input type="text" class="otp-input" maxlength="1">
+            </div>
+            <div class="generate-otp-code" id="generate-otp-code">Loading...</div>
+            <div class="otp-validate-message"></div>
+
+            
+
+            <div id="switch-button">
+                <label class="switch">
+                    <input type="checkbox" id="switch-button-tog">
+                    <span class="slider">
+                     <svg class="slider-icon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation"><path fill="none" d="m4 16.5 8 8 16-16"></path></svg> 
+                    </span>
+                  </label>
+
+            </div>
+
+            
+
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
